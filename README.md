@@ -14,6 +14,9 @@ This is a simple Currency Converter Web Application built using HTML, CSS, and J
 ✅ Animated with subtle transitions for better UX
 
 🛠️ Technologies Used
+
 HTML5
+
 CSS3 (modern design with glassmorphism and animations)
+
 JavaScript (fetch API and dynamic dropdown handling)
