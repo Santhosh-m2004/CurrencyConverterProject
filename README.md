@@ -3,13 +3,21 @@ This is a simple Currency Converter Web Application built using HTML, CSS, and J
 
 
 📌 Features
+
 ✅ Clean and responsive UI design with modern styling using CSS
+
 ✅ Dropdown menus with country flags for a better user experience
+
 ✅ Automatically loads currency codes from a separate codes.js file (keeping logic and data separate)
+
 ✅ Fetches real-time exchange rates from a live API
+
 ✅ Animated with subtle transitions for better UX
 
 🛠️ Technologies Used
+
 HTML5
+
 CSS3 (modern design with glassmorphism and animations)
+
 JavaScript (fetch API and dynamic dropdown handling)

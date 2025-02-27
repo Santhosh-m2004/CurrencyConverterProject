@@ -1,3 +1,4 @@
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@ body {
     color: white;
 }
 
+/* Main container */
 .container {
     background: rgba(255, 255, 255, 0.1);
     padding: 2rem 2.5rem;
@@ -25,12 +27,14 @@ body {
     animation: fadeIn 1s ease-in-out;
 }
 
+/* Header */
 h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #ffdd57;
 }
 
+/* Form */
 form {
     display: flex;
     flex-direction: column;
@@ -54,6 +58,7 @@ input::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
 
+/* From-To dropdown section */
 .dropdown {
     display: flex;
     align-items: center;
@@ -61,6 +66,7 @@ input::placeholder {
     gap: 12px;
 }
 
+/* Each currency block */
 .from, .to {
     display: flex;
     flex-direction: column;
@@ -69,11 +75,13 @@ input::placeholder {
     flex: 1;
 }
 
+/* Dropdown label */
 p {
     font-weight: bold;
     color: #ffdd57;
 }
 
+/* Flag + Select */
 .select-container {
     display: flex;
     align-items: center;
@@ -102,18 +110,7 @@ select {
     padding: 5px;
 }
 
-/* Optional for better visibility in some browsers */
-select option {
-    background-color: #1e3c72; /* Dark background inside dropdown */
-    color: white; /* Text color */
-}
-
-/* Option hover effect for nicer UI */
-select option:hover {
-    background-color: #ffdd57;
-    color: #1e3c72;
-}
-
+/* Centered arrow */
 .dropdown i {
     font-size: 1.8rem;
     color: #ffdd57;
@@ -127,6 +124,7 @@ select option:hover {
     margin: 0.5rem 0;
 }
 
+/* Button */
 button {
     width: 100%;
     height: 45px;
@@ -145,6 +143,7 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
