@@ -1,10 +1,9 @@
-// Import country codes (in HTML, link this before app.js)
+
 const fromCurrency = document.querySelector(".from select");
 const toCurrency = document.querySelector(".to select");
 const exchangeRateTxt = document.querySelector(".msg");
 const getButton = document.querySelector("form button");
 
-// Populate dropdowns using countryList from codes.js
 function populateDropdowns() {
     for (let currencyCode in countryList) {
         let option1 = new Option(currencyCode, currencyCode);
@@ -13,7 +12,7 @@ function populateDropdowns() {
         toCurrency.appendChild(option2);
     }
 
-    // Set default selections
+   
     fromCurrency.value = "USD";
     toCurrency.value = "INR";
 
@@ -21,14 +20,14 @@ function populateDropdowns() {
     updateFlag(toCurrency);
 }
 
-// Update flag when currency changes
+
 function updateFlag(element) {
     const countryCode = countryList[element.value];
     const imgTag = element.parentElement.querySelector("img");
     imgTag.src = `https://flagcdn.com/w40/${countryCode.toLowerCase()}.png`;
 }
 
-// Fetch and calculate exchange rate
+
 async function getExchangeRate() {
     const amount = document.querySelector("input").value || 1;
     const fromCode = fromCurrency.value;
@@ -44,7 +43,7 @@ async function getExchangeRate() {
     exchangeRateTxt.innerText = `${amount} ${fromCode} = ${total} ${toCode}`;
 }
 
-// Event Listeners
+
 fromCurrency.addEventListener("change", () => updateFlag(fromCurrency));
 toCurrency.addEventListener("change", () => updateFlag(toCurrency));
 getButton.addEventListener("click", (e) => {
@@ -52,6 +51,5 @@ getButton.addEventListener("click", (e) => {
     getExchangeRate();
 });
 
-// Initialize
 populateDropdowns();
 getExchangeRate();
